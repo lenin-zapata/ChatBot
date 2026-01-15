@@ -6,8 +6,8 @@ import os
 # Configuración de la Página
 # ==========================================
 st.set_page_config(
-    page_title="Mi Chatbot IA",
-    page_icon="🤖",
+    page_title="Chatbot Lenin Zapata",
+    page_icon="",
     layout="centered"
 )
 

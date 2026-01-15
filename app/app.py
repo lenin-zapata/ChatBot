@@ -11,7 +11,7 @@ st.set_page_config(
     layout="centered"
 )
 
-st.title("🤖 Asistente Virtual (Powered by Groq)")
+st.title("Asistente Virtual (Desarrollado por Lenin Zapata)")
 st.markdown("Este es un chatbot conversacional ultrarrápido usando el modelo **Llama 3**.")
 
 # ==========================================
@@ -60,7 +60,7 @@ if prompt := st.chat_input("Escribe tu mensaje aquí..."):
             # Llamada a Groq (Llama 3 8B es rapidísimo y gratis)
             chat_completion = client.chat.completions.create(
                 messages=st.session_state.messages,
-                model="llama3-8b-8192",
+                model="llama-3.3-70b-versatile",
                 temperature=0.5,
                 max_tokens=1024,
                 stream=True, # Efecto de escritura en tiempo real

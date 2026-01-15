@@ -1,0 +1,20 @@
+# Ignorar las claves de API de Streamlit
+.streamlit/secrets.toml
+# Ignorar archivos .env si los usaras en el futuro
+.env
+
+# --- Entorno Virtual y Librerías ---
+# Ignorar la carpeta donde se instalan las librerías (pesa mucho y es innecesaria en la nube)
+venv/
+.venv/
+env/
+
+# --- Archivos basura de Python ---
+# Ignorar archivos compilados y caché
+__pycache__/
+*.pyc
+
+# --- Sistema Operativo y Editores ---
+.DS_Store
+.vscode/
+Thumbs.db

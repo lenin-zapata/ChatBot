@@ -11,8 +11,8 @@ st.set_page_config(
     layout="centered"
 )
 
-st.title("Asistente Virtual (Desarrollado por Lenin Zapata)")
-st.markdown("Este es un chatbot conversacional ultrarrápido usando el modelo **Llama 3**.")
+st.title("Virtual AI Assistant (Developed by Lenin Zapata)")
+st.markdown("This is an ultra-fast conversational chatbot using the **Llama 3** model.")
 
 # ==========================================
 # Configuración de la API (Groq)
@@ -43,7 +43,7 @@ for message in st.session_state.messages:
 # ==========================================
 # Lógica del Chat
 # ==========================================
-if prompt := st.chat_input("Escribe tu mensaje aquí..."):
+if prompt := st.chat_input("Write your message here..."):
     # 1. Mostrar mensaje del usuario
     with st.chat_message("user"):
         st.markdown(prompt)
